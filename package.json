@@ -4,7 +4,7 @@
   "description": "One Page Website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Adrian Wilczek",
   "license": "ISC",
