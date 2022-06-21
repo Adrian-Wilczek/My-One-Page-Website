@@ -1,3 +1,4 @@
+/*kolory*/
 * {
   margin: 0;
   padding: 0; }
@@ -8,14 +9,6 @@ html {
 body {
   font-weight: 400;
   font-family: 'Roboto', sans-serif; }
-
-.purpleFiltr {
-  background-image: linear-gradient(to right, rgba(154, 0, 255, 0.81), rgba(154, 0, 255, 0.74));
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
 
 .bgVideo {
   position: absolute;
@@ -29,3 +22,26 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+  .bgVideo__purpleFiltr {
+    background-image: linear-gradient(to right, rgba(154, 0, 255, 0.81), rgba(154, 0, 255, 0.74));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2vh;
+  flex-wrap: wrap; }
+  .navigation__element {
+    color: #f53ca5;
+    font-size: 4.5rem;
+    border: solid 3px #f53ca5;
+    margin-right: 4vw;
+    list-style: none;
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: 700; }
+    .navigation__element--last {
+      margin-right: 2vw; }
