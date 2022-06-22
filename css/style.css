@@ -1,5 +1,5 @@
 /*kolory*/
-/*screen sizes*/
+/*screen sizes (width) */
 * {
   margin: 0;
   padding: 0; }
@@ -18,6 +18,15 @@ html {
   @media (max-width: 850px) {
     html {
       font-size: 6.5px; } }
+  @media (max-width: 800px) {
+    html {
+      font-size: 6px; } }
+  @media (max-width: 750px) {
+    html {
+      font-size: 5.5px; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 5px; } }
 
 body {
   font-weight: 400;
@@ -46,17 +55,45 @@ body {
 .navigation {
   display: flex;
   justify-content: flex-end;
-  margin-top: 8vh; }
+  margin-top: 9vh;
+  width: 100vw; }
+  @media (max-width: 700px) {
+    .navigation {
+      position: absolute;
+      top: 39%;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw; } }
   .navigation__element {
+    display: flex;
     color: #f53ca5;
     font-size: 4rem;
     border: solid 3px #f53ca5;
     margin-right: 3vw;
     list-style: none;
     padding: 1rem 4rem 1rem 4rem;
-    font-weight: 700; }
+    font-weight: 700;
+    justify-content: center; }
+    @media (max-width: 800px) {
+      .navigation__element {
+        font-size: 4.25rem; } }
+    @media (max-width: 700px) {
+      .navigation__element {
+        margin-top: 4vh;
+        font-size: 5rem;
+        width: 25vw;
+        padding: 1.5rem 4rem 1.5rem 4rem; } }
+    @media (max-width: 600px) {
+      .navigation__element {
+        padding: 2rem 5rem 2rem 5rem; } }
+    @media (max-width: 500px) {
+      .navigation__element {
+        padding: 2rem 9rem 2rem 9rem; } }
     .navigation__element--last {
       margin-right: 6vw; }
+      @media (max-width: 700px) {
+        .navigation__element--last {
+          margin-right: 3vw; } }
 
 .firstHeader {
   color: white;
@@ -64,9 +101,16 @@ body {
   flex-direction: column;
   margin-top: 22vh;
   margin-left: 5rem; }
+  @media (max-width: 700px) {
+    .firstHeader {
+      position: absolute;
+      top: -15%; } }
   .firstHeader__element1 {
     font-size: 15rem; }
     @media (max-width: 900px) {
+      .firstHeader__element1 {
+        font-size: 17rem; } }
+    @media (max-width: 500px) {
       .firstHeader__element1 {
         font-size: 17rem; } }
   .firstHeader__element2 {
@@ -74,12 +118,21 @@ body {
     @media (max-width: 900px) {
       .firstHeader__element2 {
         font-size: 15rem; } }
+    @media (max-width: 500px) {
+      .firstHeader__element2 {
+        font-size: 13rem; } }
+    @media (max-width: 500px) {
+      .firstHeader__element2 {
+        font-size: 11.5rem; } }
   .firstHeader__element3 {
     font-size: 5rem;
     color: #f53ca5; }
     @media (max-width: 900px) {
       .firstHeader__element3 {
         font-size: 7rem; } }
+    @media (max-width: 500px) {
+      .firstHeader__element3 {
+        font-size: 6rem; } }
   @media (max-width: 900px) {
     .firstHeader {
       margin-left: 7rem; } }
@@ -87,4 +140,5 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }

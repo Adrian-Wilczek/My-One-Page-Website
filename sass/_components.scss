@@ -26,8 +26,18 @@
 .navigation{
     display: flex;
     justify-content: flex-end;
-    margin-top: 8vh;
+    margin-top: 9vh;
+    width: 100vw;
+    @media (max-width: $screen-7)
+    {
+        position: absolute;
+        top: 39%;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
     &__element{
+        display: flex;
         color: $main-font-color;
         font-size: 4rem;
         border: solid 3px $main-font-color;
@@ -35,8 +45,33 @@
         list-style: none;
         padding: 1rem 4rem 1rem 4rem;
         font-weight: 700;
+        justify-content: center;
+        
+        @media (max-width: $screen-5)
+        {
+            font-size: 4.25rem;
+         }
+         @media (max-width: $screen-7)
+        {
+            margin-top: 4vh;
+            font-size: 5rem;
+            width: 25vw;
+            padding: 1.5rem 4rem 1.5rem 4rem;
+         }
+         @media (max-width: $screen-8)
+         {
+            padding: 2rem 5rem 2rem 5rem;
+         }
+         @media (max-width: $screen-9)
+         {
+            padding: 2rem 9rem 2rem 9rem;
+         }
         &--last{
             margin-right: 6vw;
+        @media (max-width: $screen-7)
+        {
+          margin-right: 3vw;
+        }
         }
 
     }
@@ -48,9 +83,18 @@
     flex-direction: column;
     margin-top: 22vh;
     margin-left: 5rem;
+    @media(max-width: $screen-7)
+    {
+        position: absolute;
+        top: -15%;
+    }
     &__element1{
         font-size: 15rem;
         @media (max-width: $screen-3)
+        {
+            font-size: 17rem;
+        }
+        @media (max-width: $screen-9)
         {
             font-size: 17rem;
         }
@@ -62,6 +106,14 @@
         {
             font-size: 15rem;
         }
+        @media (max-width: $screen-9)
+        {
+            font-size: 13rem;
+        }
+        @media (max-width: $screen-9)
+        {
+            font-size: 11.5rem;
+        }
     }
     &__element3{
         font-size: 5rem;
@@ -69,6 +121,10 @@
         @media (max-width: $screen-3)
         {
             font-size: 7rem;
+        }
+        @media (max-width: $screen-9)
+        {
+            font-size: 6rem;
         }
 
     }
