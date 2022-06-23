@@ -28,6 +28,8 @@
     justify-content: flex-end;
     margin-top: 9vh;
     width: 100vw;
+    animation-name: navbar-start-animation;
+    animation-duration: 1s;
     @media (max-width: $screen-7)
     {
         position: absolute;
@@ -35,6 +37,7 @@
         flex-direction: column;
         align-items: center;
         width: 100vw;
+        animation-name: navbar-start-animation-small-screens;
     }
     &__element{
         display: flex;
@@ -46,6 +49,13 @@
         padding: 1rem 4rem 1rem 4rem;
         font-weight: 700;
         justify-content: center;
+        transition: all 0.4s;
+        &:hover{
+            cursor: pointer;
+            background-color: #fff;
+            transform: scale(1.1);
+        }
+       
         
         @media (max-width: $screen-5)
         {
@@ -83,6 +93,10 @@
     flex-direction: column;
     margin-top: 22vh;
     margin-left: 5rem;
+    animation-name: header-start-animation;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    
     @media(max-width: $screen-7)
     {
         position: absolute;

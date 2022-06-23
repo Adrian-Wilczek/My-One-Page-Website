@@ -12,8 +12,37 @@ $screen-8: 600px;
 $screen-9: 500px;
 $screen-10: 400px;
 
+@keyframes navbar-start-animation {
+    0%{
+        transform: translateY(-100vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes navbar-start-animation-small-screens{
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes header-start-animation{
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
 
+    80% {
+        transform: translateX(1rem);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
 *{
     margin: 0;
     padding: 0;
