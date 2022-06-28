@@ -54,6 +54,7 @@ body {
   font-weight: 400;
   font-family: 'Roboto', sans-serif; }
 
+/* header */
 .bgVideo {
   position: absolute;
   top: 0;
@@ -170,11 +171,68 @@ body {
     .firstHeader {
       margin-left: 7rem; } }
 
+/* aboutMeSection */
+.sectionHeader {
+  margin-top: 8vh;
+  margin-left: 4vw; }
+  .sectionHeader__content {
+    font-size: 10rem;
+    color: #f53ca5; }
+  .sectionHeader__stress {
+    background-color: #9A00FF;
+    height: 2rem;
+    margin-left: -4vw;
+    width: 33vw; }
+
+.mainContentSection {
+  position: absolute;
+  top: 10vh;
+  right: -3vw;
+  background-color: #9A00FF;
+  border-radius: 90%;
+  width: 52rem;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .mainContentSection__content {
+    display: block;
+    color: white;
+    font-size: 3rem;
+    width: 33rem;
+    font-weight: 700; }
+
+.developerImage {
+  margin-left: 10vw;
+  position: absolute;
+  bottom: -6rem;
+  width: 45vw; }
+  .developerImage__content {
+    width: 45vw; }
+
+.button {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: 10vh;
+  right: 20vw;
+  color: #9A00FF;
+  text-decoration: none;
+  border: 4px solid #9A00FF; }
+
 .container {
   overflow: hidden; }
 
-header {
+.header {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: relative; }
+
+.aboutMeSection {
+  overflow: hidden;
+  width: 100vw;
+  height: 110vh;
+  position: relative;
+  border-bottom: 1.25rem solid #9A00FF; }

@@ -1,4 +1,4 @@
-
+/* header */
 .bgVideo{
     position: absolute;
     top: 0;
@@ -150,4 +150,63 @@
     }
     
 }
+
+/* aboutMeSection */
+.sectionHeader{
+    margin-top: 8vh;
+    margin-left: 4vw;
+    &__content{
+        font-size: 10rem;
+        color: $main-font-color;
+    }
+    &__stress{
+        background-color: $main-background-color;
+        height: 2rem;
+        margin-left: -4vw;
+        width: 33vw;
+    }
+}
+.mainContentSection{
+    position: absolute;
+    top: 10vh;
+    right: -3vw;
+    background-color: $main-background-color;
+    border-radius: 90%;
+    width: 52rem;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content{
+        display: block;
+        color: white;
+        font-size: 3rem;
+        width: 33rem;
+        font-weight: 700;
+    }
+}
+.developerImage{
+    margin-left: 10vw;
+    position: absolute;
+    bottom: -6rem;
+    width: 45vw;
+
+    
+    &__content{
+        width: 45vw;
+    }
+}
+.button{
+   font-size: 3rem;
+   font-weight: 700;
+   padding: 1rem 2rem;
+   position: absolute;
+   bottom: 10vh;
+   right: 20vw;
+   color: $main-background-color;
+   text-decoration: none;
+   border: 4px solid $main-background-color;
+   
+}
+
 
