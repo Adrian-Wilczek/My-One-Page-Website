@@ -1,17 +1,22 @@
-/*kolory*/
+/*colors*/
 $main-font-color: #f53ca5;
 $main-background-color: #9A00FF;
 /*screen sizes (width) */
 $screen-1: 1250px;
 $screen-2: 1000px;
-$screen-3: 900px;
-$screen-4: 850px;
-$screen-5: 800px;
-$screen-6: 750px;
-$screen-7: 700px;
-$screen-8: 600px;
-$screen-9: 500px;
-$screen-10: 400px;
+$screen-3: 850px;
+$screen-4: 770px;
+$screen-5: 450px;
+$screen-6: 350px;
+
+/*big screen sizes (width) */
+$screen-big-1: 2000px;
+/*screen sizes (height) */
+
+$screen-1h: 700px;
+$screen-2h: 450px;
+$screen-3h: 400px;
+$screen-4h: 350px;
 
 @keyframes navbar-start-animation {
     0%{
@@ -48,39 +53,61 @@ $screen-10: 400px;
     margin: 0;
     padding: 0;
 }
+html, body {
+    scroll-behavior: smooth;
+}
 html{
-    font-size: 10px;
+    font-size: 62.5%;
+    @media(min-width: $screen-big-1)
+    {
+        font-size: 93.75%; /* 15px */
+    }
     @media (max-width: $screen-1)
     {
-        font-size: 8.5px;
+        font-size: 50%;  /* 9px */
     }
     @media (max-width: $screen-2)
     {
-        font-size: 7.5px;
+        font-size: 43.75%; /* 7px */
     }
     @media (max-width: $screen-3)
     {
-        font-size: 7px;
+        font-size: 37.5%; /* 6px */
     }
     @media (max-width: $screen-4)
     {
-        font-size: 6.5px;
+        font-size: 31.25%; /* 5px */
     }
+   
     @media (max-width: $screen-5)
     {
-        font-size: 6px;
+        font-size: 25%; /* 4px */
     }
     @media (max-width: $screen-6)
     {
-        font-size: 5.5px;
+        font-size: 18.75%; /* 3px */
     }
-    @media (max-width: $screen-8)
+   
+    @media (max-height: $screen-2h)
     {
-        font-size: 5px;
+        font-size: 31.25%;
     }
+    @media (max-height: $screen-3h)
+    {
+        font-size: 25%;
+    }
+    @media (max-height: $screen-4h)
+    {
+        font-size: 18.75%;
+    }
+
    
 }
 body{
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+}
+a, a:link, a:visited{
+    color: inherit;
+    text-decoration: inherit;
 }
