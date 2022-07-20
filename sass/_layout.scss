@@ -19,9 +19,10 @@
 .aboutMeSection{
     overflow: hidden;
     width: 100vw;
-    height: 105vh;
+    height: auto;
     position: relative;
     border-bottom: 1.25rem solid $main-background-color;
+    
     @media (max-width: $screen-3)
     {
         
@@ -31,5 +32,17 @@
         height: auto;
     }
     
+}
+.techSection{
+    position:relative;
+    padding-bottom: 5vh;
+    border-bottom: 1.25rem solid $main-background-color;
+    overflow: hidden;
+    @media (max-width: $screen-3)
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 

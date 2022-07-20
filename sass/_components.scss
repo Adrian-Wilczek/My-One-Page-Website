@@ -51,6 +51,7 @@
         &:active{
             transform: translateY(20px);
         }
+        
         @media (max-width: $screen-3)
         {
             font-size: 4.5rem;
@@ -129,6 +130,10 @@
     }
     &__element1{
         font-size: 15rem;
+        @media (max-width: $screen-1)
+        {
+            font-size: 18rem;
+        }
         
         @media (max-width: $screen-3)
         {
@@ -140,6 +145,11 @@
     
     &__element2{
         font-size: 12rem;
+        @media (max-width: $screen-1)
+        {
+            font-size: 14rem;
+        }
+        
         @media (max-width: $screen-3)
         {
             font-size: 16rem;
@@ -149,6 +159,14 @@
     &__element3{
         font-size: 5rem;
         color: $main-font-color;
+        @media (max-width: $screen-1)
+        {
+            font-size: 7rem;
+        }
+        @media (max-width: $screen-2)
+        {
+            font-size: 8rem;
+        }
         @media (max-width: $screen-3)
         {
             font-size: 8rem;
@@ -176,36 +194,69 @@
     margin-left: 4vw;
     
     &__content{
-        font-size: 10rem;
+        font-size: 11rem;
         color: $main-font-color;
+        transition: 0.3s;
+        &--aboutMe{
+            @media (max-width: $screen-1)
+        {
+            font-size: 14rem;
+        }
         @media (max-width: $screen-1)
         {
-            font-size: 14rem;
+            font-size: 15rem;
         }
-        @media (max-width: $screen-2)
-        {
-            font-size: 14rem;
-        }
-        @media (max-width: $screen-3)
-        {
-            font-size: 17rem;
-        }
+        
         @media (max-width: $screen-4)
         {
             font-size: 19rem;
         }
+        }
+        &--tech{
+            width: 10rem;
+            font-size: 9rem;
+            @media (max-width: $screen-1)
+            {
+                font-size: 10rem
+            }
+            @media (max-width: $screen-3)
+            {
+                font-size: 12rem;
+            }
+            @media (max-width: $screen-4)
+            {
+                font-size: 14rem;
+            }
+            
+        }
+        &:hover{
+            transform: translateX(4rem);
+            cursor: pointer;
+        }
+        
     }
     &__stress{
         background-color: $main-background-color;
         height: 2rem;
         margin-left: -10rem;
         width: 60rem;
-        @media (max-width: $screen-3)
-        {
-            height: 2.25rem;
-            width: 70rem;
+        &--aboutMe{
+            @media (max-width: $screen-3)
+            {
+                height: 2.25rem;
+                width: 70rem;
+            }
         }
+        &--tech{
+            width: 80rem;
+            @media (max-width: $screen-3)
+            {
+                width: 100rem;
+            }
+        }
+        
     }
+    
     @media (max-width: $screen-3)
     {
         align-self: flex-start;
@@ -219,47 +270,13 @@
     right: -3vw;
     background-color: $main-background-color;
     border-radius: 90%;
-    width: 55rem;
-    height: 53rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    &__content{
-        display: block;
-        color: white;
-        font-size: 3.5rem;
-        width: 33rem;
-        font-weight: 700;
-        text-align: center;
-        @media (max-width: $screen-1)
-        {
-            font-size: 4rem ;
-            width: 44rem;
-        }
-        @media (max-width: $screen-2)
-        {
-            font-size: 4.5rem ;
-            width: 50rem;
-        }
-        @media (max-width: $screen-3)
-        {
-            
-            font-size: 6rem ;
-            width: 100rem;
-            color: $main-background-color;
-            margin-top: 6rem;
-        }
-        @media (max-width: $screen-4)
-        {
-            font-size: 7rem;
-        }
-        @media (max-width: $screen-5)
-        {
-            font-size: 8rem;
-        }
-        
-    }
-    @media(max-width: $screen-1)
+    &--aboutMe{
+        width: 55rem;
+        height: 53rem;
+        @media(max-width: $screen-1)
     {
         width: 60rem;
         height: 55rem;
@@ -290,12 +307,91 @@
         margin-top: 10rem;
         
     }
+    }
+    &--tech{
+        width: 35rem;
+        height: 33rem;
+        top: 3vh;
+        @media (max-width: $screen-1)
+        {
+            
+            width: 40rem;
+            height: 38rem;
+        }
+        @media(max-width: $screen-3)
+        {
+            margin-top: 10vh;
+            position: static;
+            background-color: transparent;
+            width: 50rem;
+            height: auto;
+            border-radius: 0;
+            border-left: 2px solid $main-background-color;
+            padding-left: 4rem;
+        }   
+    }
+    &__content{
+        display: block;
+        color: white;
+        font-size: 3.5rem;
+        width: 33rem;
+        font-weight: 700;
+        text-align: center;
+        &--aboutMe{
+            @media (max-width: $screen-1)
+        {
+            font-size: 4rem ;
+            width: 44rem;
+        }
+        @media (max-width: $screen-2)
+        {
+            font-size: 4.5rem ;
+            width: 50rem;
+        }
+        @media (max-width: $screen-3)
+        {
+            
+            font-size: 6rem ;
+            width: 100rem;
+            color: $main-background-color;
+            margin-top: 6rem;
+        }
+        @media (max-width: $screen-4)
+        {
+            font-size: 7rem;
+        }
+        @media (max-width: $screen-5)
+        {
+            font-size: 8rem;
+        }
+        }
+        &--tech{
+            width: 25rem;
+            text-align:left;
+            @media (max-width: $screen-1)
+            {
+                width: 25rem;
+                font-size: 4rem;
+            }
+            @media (max-width: $screen-3)
+            {
+               
+                text-align: center;
+                font-size: 8rem;
+                width: 60rem;
+                color: $main-background-color;
+            }
+        }
+        
+        
+    }
+    
    
     
     
 }
 .button{
-    font-size: 2.9rem;
+    font-size: 3.4rem;
     font-weight: 700;
     padding: 1rem 2rem;
     color: $main-background-color;
@@ -304,14 +400,12 @@
     transition: 0.5s;
     &--lookMore{
      position: absolute;
-     top: 87vh;
-     right: 25vw;
+     top: 70rem;
+     right: 15vw;
+      
       @media (max-width: $screen-1)
       {
-        right: 12vw;
-      }
-      @media (max-width: $screen-1)
-      {
+        top: 75rem;
         right: 6vw;
       }
       @media(max-width: $screen-3)
@@ -319,10 +413,14 @@
             margin-top: 2rem;
             position: static;
         }
+        &:active{
+            transform: translateY(20px);
+        }
     }
     &:hover{
          color: white;
          background-color: $main-background-color;
+         transform: scale(1.1);
     }
     @media (max-width: 1350px)
     {
@@ -350,19 +448,42 @@
 
     
  }
-.developerImage{
-    
-    position: absolute;
-    left: 10rem;
-    bottom: -8rem;
-    width: 50vw;
+.image{
+    margin-bottom: -8rem;
+    width: auto;
     overflow: hidden;
     z-index: -1;
-
-    
-    &__content{
-        width: 60rem;
+    &--aboutMe{
         @media(max-width: $screen-1)
+    {
+        width: auto;
+        
+    }
+    @media(max-width: $screen-3)
+    {
+        width: auto;
+        position: static;
+        margin-bottom: -10vh;
+    }
+    }
+    &--tech{
+        position: absolute;
+        right: 10vw;
+        bottom: 0;
+        width: 70rem;
+        @media (max-width: $screen-1)
+        {
+            width: 70rem
+        }
+        @media (max-width: $screen-3)
+        {
+            visibility: hidden;
+        }
+    }
+    &__content{
+        width: 70rem;
+        &--aboutMe{
+            @media(max-width: $screen-1)
         {
             width: 65rem;
         }
@@ -382,21 +503,97 @@
         {
             width: 110rem;
         }
+        }
+        
         
     }
-    @media(max-width: $screen-1)
-    {
-        width: auto;
-        
-    }
-    @media(max-width: $screen-3)
-    {
-        width: auto;
-        position: static;
-        margin-bottom: -10vh;
-    }
+    
         
     
+}
+//* Tech Section *//
+.cardsTechContainer{
+    margin-top: 20vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    
+    @media (max-width: $screen-3)
+    {
+        margin-top: 10vh;
+    }
+    @media (min-width: $screen-big-2)
+    {
+        justify-content: space-around;
+    }
+    
+    
+}
+.cardContainer{
+    position: relative;
+    width: 30rem;
+    height: 45rem;
+    
+    &--tech{
+        @media(max-width: $screen-3)
+        {
+            width: 35rem;
+            height: 50rem;
+        }
+        
+        @media (max-width: $screen-4c){
+            width: 30rem;
+            height: 45rem;
+        }
+    }
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+    &:hover{
+        transform: translateY(-2rem) rotateY(180deg) scale(1.2);
+    }
+    &__front{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: $main-background-color;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+        flex-direction: column;
+    }
+    &__image{
+      
+       transform: translateY(-2rem);
+        width: 25rem;
+        height: 27rem;
+        @media (max-width: $screen-4b)
+        {
+            width: 23rem;
+            height: 25rem;
+        }
+
+
+    }
+    &__paragraph{
+        margin-top: 2rem;
+        color: white;
+        font-size: 4rem;
+    }
+    &__back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: $main-font-color;
+        transform: rotateY(180deg);
+    }
 }
 
    

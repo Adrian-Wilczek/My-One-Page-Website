@@ -6,17 +6,25 @@ $screen-1: 1250px;
 $screen-2: 1000px;
 $screen-3: 850px;
 $screen-4: 770px;
+$screen-4b: 650px;
+$screen-4c: 550px;
 $screen-5: 450px;
 $screen-6: 350px;
 
 /*big screen sizes (width) */
-$screen-big-1: 2000px;
+$screen-big-1: 1500px;
+$screen-big-2: 2000px;
+$screen-big-3: 3000px;
+
 /*screen sizes (height) */
 
 $screen-1h: 700px;
 $screen-2h: 450px;
 $screen-3h: 400px;
 $screen-4h: 350px;
+
+/*big screen sizes (height)*/
+$screen-big-1h: 1000px;
 
 @keyframes navbar-start-animation {
     0%{
@@ -60,7 +68,15 @@ html{
     font-size: 62.5%;
     @media(min-width: $screen-big-1)
     {
+        font-size: 81.25%; /* 14px */
+    }
+    @media(min-width: $screen-big-2)
+    {
         font-size: 93.75%; /* 15px */
+    }
+    @media(min-width: $screen-big-3)
+    {
+        font-size: 125%; /* 18px */
     }
     @media (max-width: $screen-1)
     {
@@ -87,18 +103,18 @@ html{
     {
         font-size: 18.75%; /* 3px */
     }
-   
+
     @media (max-height: $screen-2h)
     {
-        font-size: 31.25%;
+        font-size: 31.25%; /* 5px */
     }
     @media (max-height: $screen-3h)
     {
-        font-size: 25%;
+        font-size: 25%; /* 4px */
     }
     @media (max-height: $screen-4h)
     {
-        font-size: 18.75%;
+        font-size: 18.75%; /* 3px */
     }
 
    
