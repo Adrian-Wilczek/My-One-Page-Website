@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="container">
+    <main>
     <header class="header">
         <div class="bgVideo">
             <video class="bgVideo__content" autoplay="autoplay" loop="loop">
@@ -25,7 +26,7 @@
         <nav>
             <ul class="navigation">
                 <li class="navigation__element"><a href="#AboutMe">O mnie</a></li>
-                <li class="navigation__element">Technologie</li>
+                <li class="navigation__element"><a href="#technologies">Technologie</a></li>
                 <li class="navigation__element">Portfolio</li>
                 <li class="navigation__element navigation__element--last">Kontakt</li>
             </ul>
@@ -37,10 +38,10 @@
         </h1>
     </header>
     <section id="AboutMe" class="aboutMeSection">
-        <div class="sectionHeader">
+        <header class="sectionHeader">
             <h2 class="sectionHeader__content sectionHeader__content--aboutMe">O mnie</h2>
             <div class="sectionHeader__stress sectionHeader__stress--aboutMe"></div>
-        </div>
+        </header>
         
         <div class="mainContent mainContent--aboutMe">
             <p class="mainContent__content mainContent__content--aboutMe">Cześć, mam na imię Adrian. Urodziłem się i mieszkam w Polsce. Zajmuję się projektowaniem i tworzeniem stron www.</p>
@@ -54,11 +55,11 @@
             <img class="image__content" src="images/Developer.png" alt="Developer image">
         </div>
     </section>
-    <section class="techSection">
-        <div class="sectionHeader">
+    <section id="technologies" class="techSection">
+        <header class="sectionHeader">
             <h2 class="sectionHeader__content sectionHeader__content--tech">Opanowane technologie</h2>
             <div class="sectionHeader__stress sectionHeader__stress--tech"></div>
-        </div>
+        </header>
         <div class="mainContent mainContent--tech">
             <p class="mainContent__content mainContent__content--tech">Tego zdążyłem, do tej pory, się nauczyć. </p>
         </div>
@@ -98,6 +99,25 @@
         </div>
     </div>
     </section>
+    <section class="portfolioSection">
+        <header class="sectionHeader">
+            <h2 class="sectionHeader__content sectionHeader__content--port">Portfolio</h2>
+            <div class="sectionHeader__stress sectionHeader__stress--port"></div>
+
+        </header>
+        <div class="mainContent mainContent--port">
+            <p class="mainContent__content mainContent__content--port">Zapraszam na mojego GitHub’a ;)</p>
+            
+        </div>
+        <div class="button button--port">
+            <a href="#">Wejdź na GitHub'a</a>
+        </div>
+        <div class="image image--port">
+            <img class="image__content image__content--port" src="images/human.png" alt="Human image">
+        </div>
+
+    </section>
+    </main>
     </div>
   
 </body>

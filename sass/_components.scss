@@ -80,13 +80,12 @@
             margin-top: 5vh;
         }
          
-        &--last{
-            margin-right: 6vw;
+        
         @media (max-width: $screen-4)
         {
           margin-right: 3vw;
         }
-        }
+        
 
     }
     @media (max-width: $screen-4)
@@ -189,24 +188,26 @@
 
 /* aboutMeSection */
 .sectionHeader{
-    margin-top: 8vh;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
     margin-left: 4vw;
+    margin-bottom: 5vh;
+    width: 100rem;
+    display: block;
     
     &__content{
         font-size: 11rem;
         color: $main-font-color;
         transition: 0.3s;
         &--aboutMe{
-            @media (max-width: $screen-1)
-        {
-            font-size: 14rem;
-        }
+            
         @media (max-width: $screen-1)
         {
             font-size: 15rem;
         }
-        
+        @media (max-width: $screen-3)
+        {
+            font-size: 16rem;
+        }
         @media (max-width: $screen-4)
         {
             font-size: 19rem;
@@ -221,13 +222,28 @@
             }
             @media (max-width: $screen-3)
             {
-                font-size: 12rem;
+                font-size: 13.5rem;
             }
             @media (max-width: $screen-4)
             {
                 font-size: 14rem;
             }
             
+        }
+        &--port{
+            font-size: 10rem;
+            @media (max-width: $screen-2)
+            {
+                font-size: 13rem;
+            }
+            @media (max-width: $screen-3)
+            {
+                font-size: 15rem;
+            }
+            @media (max-width: $screen-4)
+            {
+                font-size: 17rem;
+            }
         }
         &:hover{
             transform: translateX(4rem);
@@ -254,13 +270,19 @@
                 width: 100rem;
             }
         }
-        
+        &--port{
+            @media (max-width: $screen-2)
+            {
+                width: 75rem;
+            }
+            
+        }
     }
     
     @media (max-width: $screen-3)
     {
         align-self: flex-start;
-        margin-top: 12vh;
+        margin-top: 6vh;
     }
     
 }
@@ -288,6 +310,12 @@
     }
     @media(max-width: $screen-3)
     {
+        top: 6vh;
+        
+    }
+    @media(max-width: $screen-4)
+    {
+        
         position: static;
         background-color: transparent;
         width: 90rem;
@@ -297,15 +325,10 @@
         margin-bottom: 5vh;
         
     }
-    @media(max-width: $screen-4)
-    {
-        width: 100rem;
-        
-    }
     @media(max-width: $screen-5)
     {
-        margin-top: 10rem;
         
+        margin-top: 10rem;
     }
     }
     &--tech{
@@ -318,17 +341,57 @@
             width: 40rem;
             height: 38rem;
         }
-        @media(max-width: $screen-3)
+        @media (max-width: $screen-3)
+        {
+            top: 10vh;
+        }
+        @media(max-width: $screen-4)
         {
             margin-top: 10vh;
             position: static;
             background-color: transparent;
-            width: 50rem;
+            width: 60rem;
             height: auto;
             border-radius: 0;
             border-left: 2px solid $main-background-color;
             padding-left: 4rem;
         }   
+    }
+    &--port{
+        width: 37rem;
+        height: 35rem;
+        right: 77vw;
+        top: 30vh;
+        @media (max-width: $screen-1)
+        {
+            top: 23rem;
+            width: 45rem;
+            height: 43rem;
+            right: 70vw;
+        }
+        @media (max-width: $screen-2)
+        {
+           top: 25vh;
+            right: 70vw;
+        }
+        @media (max-width: $screen-3)
+        {
+            top: 23vh;
+            right: 70vw;
+            width: 50rem;
+           height: 47rem;
+        }
+        @media (max-width: $screen-4)
+        {
+            margin-top: 6vh;
+            position: static;
+            background-color: transparent;
+            width: 70rem;
+            height: auto;
+            border-radius: 0;
+            border-left: 2px solid $main-background-color;
+        }
+
     }
     &__content{
         display: block;
@@ -351,14 +414,16 @@
         @media (max-width: $screen-3)
         {
             
-            font-size: 6rem ;
-            width: 100rem;
-            color: $main-background-color;
-            margin-top: 6rem;
+            font-size: 4rem ;
+            width: 50rem;
+            color: white;
         }
         @media (max-width: $screen-4)
         {
             font-size: 7rem;
+            color: $main-background-color;
+            width: 100rem;
+            padding-left: 5rem;
         }
         @media (max-width: $screen-5)
         {
@@ -374,6 +439,13 @@
                 font-size: 4rem;
             }
             @media (max-width: $screen-3)
+        {
+            
+            font-size: 4rem ;
+            width: 30rem;
+            color: white;
+        }
+            @media (max-width: $screen-4)
             {
                
                 text-align: center;
@@ -382,9 +454,31 @@
                 color: $main-background-color;
             }
         }
+        &--port{
+            
+            margin-left: 4rem;
+            width: 25rem;
+            @media (max-width: $screen-1)
+            {
+                font-size: 4.5rem;
+                margin-left: 4vw;
+                width: 30rem;
+            }
+            @media (max-width: $screen-3)
+            {
+                font-size: 5rem;
+                
+            }
+            @media (max-width: $screen-4)
+            {
+                font-size: 8rem;
+                color: $main-background-color;
+                width: 90rem;
+                padding-left: 2.5rem;
+            }
         
         
-    }
+    }}
     
    
     
@@ -402,19 +496,59 @@
      position: absolute;
      top: 70rem;
      right: 15vw;
-      
+     @media (max-width: 1350px)
+     {
+         font-size: 2.75rem;
+     }
       @media (max-width: $screen-1)
       {
-        top: 75rem;
+        top: 77rem;
         right: 6vw;
+        font-size: 4rem;
       }
       @media(max-width: $screen-3)
         {   
+            top: 80rem;
+        }
+      @media(max-width: $screen-4)
+        {   
             margin-top: 2rem;
             position: static;
+            font-size: 6rem;
         }
         &:active{
             transform: translateY(20px);
+        }
+    }
+    &--port{
+        position: absolute;
+        bottom: 10vh;
+        left: 20vw;
+        width: 30rem;
+        text-align: center;
+        @media (max-width: $screen-1)
+        {
+            bottom: 7vh;
+            left: 10vw;
+            width: 35rem;
+            font-size: 4rem;
+        }
+        
+        @media (max-width: $screen-3)
+        {
+            
+            width: 45rem;
+            left: 3vw;
+            bottom: 7vh;
+            font-size: 5rem;
+
+        }
+        @media (max-width: $screen-4)
+        {
+            margin-top: 6vh;
+            position: static;
+            width: 60rem;
+            font-size: 6rem;
         }
     }
     &:hover{
@@ -422,28 +556,15 @@
          background-color: $main-background-color;
          transform: scale(1.1);
     }
-    @media (max-width: 1350px)
-    {
-        font-size: 2.75rem;
-    }
-    @media (max-width: $screen-1)
-    {
-         font-size: 4rem;
-
-    }
+    
+    
     @media (max-width: $screen-3)
     {
-         font-size: 5rem;
+         
          border: 3px solid $main-background-color;
 
     }
-    @media (max-width: $screen-4)
-    {
-         font-size: 6rem;
-         position: static;
-         margin-top: 5vh;
-
-    }
+   
 
 
     
@@ -452,7 +573,7 @@
     margin-bottom: -8rem;
     width: auto;
     overflow: hidden;
-    z-index: -1;
+    z-index: -200;
     &--aboutMe{
         @media(max-width: $screen-1)
     {
@@ -462,7 +583,6 @@
     @media(max-width: $screen-3)
     {
         width: auto;
-        position: static;
         margin-bottom: -10vh;
     }
     }
@@ -475,9 +595,31 @@
         {
             width: 70rem
         }
-        @media (max-width: $screen-3)
+        @media (max-width: $screen-4)
         {
             visibility: hidden;
+        }
+    }
+    &--port{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0;
+        margin-top: -10rem;
+        margin-right: -3vw;
+        align-items: flex-start;
+        @media (max-width: $screen-2)
+        {
+            margin-top: 0;
+        }
+        @media (max-width: $screen-3)
+        {
+            
+            margin-top: 10vh;
+        }
+        @media (max-width: $screen-4)
+        {
+            
+            margin-top: 3vh;
         }
     }
     &__content{
@@ -493,25 +635,32 @@
         }
         @media(max-width: $screen-3)
         {
+            width: 90rem;
+        }
+       
+        @media(max-width: $screen-4)
+        {
+            width: 120rem;
+        }
+        }
+        &--port{
             width: 80rem;
+            @media (max-width: $screen-1)
+            {
+                width: 70rem;
+            }
+            @media (max-width: $screen-3)
+            {
+                width: 70rem;
+            }
         }
-        @media(max-width: $screen-4)
-        {
-            width: 100rem;
-        }
-        @media(max-width: $screen-4)
-        {
-            width: 110rem;
-        }
-        }
-        
         
     }
     
         
     
 }
-//* Tech Section *//
+//Tech Section//
 .cardsTechContainer{
     margin-top: 20vh;
     display: flex;
@@ -520,7 +669,7 @@
     
     @media (max-width: $screen-3)
     {
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
     @media (min-width: $screen-big-2)
     {
@@ -544,6 +693,11 @@
         @media (max-width: $screen-4c){
             width: 30rem;
             height: 45rem;
+        }
+        @media (max-width: $screen-5)
+        {
+            width: 29rem;
+            height: 44rem;
         }
     }
 }
