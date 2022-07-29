@@ -202,7 +202,7 @@
             
         @media (max-width: $screen-1)
         {
-            font-size: 15rem;
+            font-size: 13rem;
         }
         @media (max-width: $screen-3)
         {
@@ -232,6 +232,10 @@
         }
         &--port{
             font-size: 10rem;
+            @media(max-width: $screen-1)
+            {
+                font-size: 11rem;
+            }
             @media (max-width: $screen-2)
             {
                 font-size: 13rem;
@@ -243,6 +247,16 @@
             @media (max-width: $screen-4)
             {
                 font-size: 17rem;
+            }
+        }
+        &--con{
+            @media (max-width: $screen-2)
+            {
+                font-size: 12rem;
+            }
+            @media(max-width: $screen-3)
+            {
+                font-size: 15rem;
             }
         }
         &:hover{
@@ -271,11 +285,21 @@
             }
         }
         &--port{
+            @media (max-width: $screen-1)
+            {
+                width: 65rem;
+            }
             @media (max-width: $screen-2)
             {
                 width: 75rem;
             }
             
+        }
+        &--con{
+            @media (max-width: $screen-3)
+            {
+                width: 80rem;
+            }
         }
     }
     
@@ -360,24 +384,21 @@
     &--port{
         width: 37rem;
         height: 35rem;
-        right: 77vw;
+        left: -4vw;
         top: 30vh;
         @media (max-width: $screen-1)
         {
-            top: 23rem;
+            top: 25rem;
             width: 45rem;
             height: 43rem;
-            right: 70vw;
         }
         @media (max-width: $screen-2)
         {
            top: 25vh;
-            right: 70vw;
         }
         @media (max-width: $screen-3)
         {
             top: 23vh;
-            right: 70vw;
             width: 50rem;
            height: 47rem;
         }
@@ -392,6 +413,40 @@
             border-left: 2px solid $main-background-color;
         }
 
+    }
+    &--con{
+        width: 47.5rem;
+        height: 45.5rem;
+        left: -4vw;
+        top: 25vh;
+        @media(max-width: $screen-1)
+        {
+            top: 20rem;
+            right: 69vw;
+            width: 50rem;
+            height: 47rem;
+        }
+        @media (max-width: $screen-2)
+        {
+            right: 65vw;
+            width: 50rem;
+            height: 47rem;
+        }
+        @media (max-width: $screen-3)
+        {
+            top: 15vh;
+        }
+        @media (max-width: $screen-4)
+        {
+            margin-top: 6vh;
+            position: static;
+            background-color: transparent;
+            width: 80rem;
+            height: auto;
+            border-radius: 0;
+            border-left: 2px solid $main-background-color;
+        }
+        
     }
     &__content{
         display: block;
@@ -427,7 +482,9 @@
         }
         @media (max-width: $screen-5)
         {
-            font-size: 8rem;
+            font-size: 6rem;
+            width: 80rem;
+            padding-left: 1rem;
         }
         }
         &--tech{
@@ -478,7 +535,27 @@
             }
         
         
-    }}
+    }
+    &--con{
+        margin-left: 5rem;
+        @media (max-width: $screen-2)
+        {
+            font-size: 4rem;
+            width: 40rem;
+        }
+        @media (max-width: $screen-4)
+        {
+            font-size: 7rem;
+            color: $main-background-color;
+            width: auto;
+            padding-left: 2rem;
+        }
+        @media (max-width: $screen-5)
+        {
+            padding-left: 1rem;
+        }
+    }
+}
     
    
     
@@ -509,6 +586,7 @@
       @media(max-width: $screen-3)
         {   
             top: 80rem;
+            border: 3px solid $main-background-color;
         }
       @media(max-width: $screen-4)
         {   
@@ -541,8 +619,10 @@
             left: 3vw;
             bottom: 7vh;
             font-size: 5rem;
-
+            border: 3px solid $main-background-color;
         }
+
+        
         @media (max-width: $screen-4)
         {
             margin-top: 6vh;
@@ -551,6 +631,80 @@
             font-size: 6rem;
         }
     }
+    &--con1{
+        position: absolute;
+        bottom: 20vh;
+        left: 30vw;
+        font-size: 4rem;
+        width: 25rem;
+        text-align: center;
+        color: white;
+        background-color: $main-font-color;
+        border: 0;
+        @media (max-width: $screen-1)
+        {
+            bottom: 20rem;
+            left: 35vw;
+            font-size: 5rem;
+            width: 30rem;
+        }
+        @media (max-width: $screen-2)
+        {
+            font-size: 5rem;
+            width: 30rem;
+
+        }
+        @media (max-width: $screen-3)
+        {
+            font-size: 6rem;
+            width: 40rem;
+            bottom: 20rem;
+        }
+        @media (max-width: $screen-4)
+        {
+            width: 50rem;
+            font-size: 8rem;
+            bottom: 23rem;
+            left: 27vw;
+        }
+    }
+    &--con2{
+        position: absolute;
+        bottom: 7vh;
+        left: 30vw;
+        font-size: 4rem;
+        width: 25rem;
+        text-align: center;
+        color: white;
+        background-color: $main-font-color;
+        border: 0;
+        @media (max-width: $screen-1)
+        {
+            left: 35vw;
+            bottom: 9rem;
+            font-size: 5rem;
+            width: 30rem;
+        }
+        @media (max-width: $screen-2)
+        {
+            font-size: 5rem;
+            width: 30rem;
+        }
+        @media (max-width: $screen-3)
+        {
+            bottom: 8rem;
+            font-size: 6rem;
+            width: 40rem;
+        }
+        @media (max-width: $screen-4)
+        {
+            width: 50rem;
+            font-size: 8rem;
+            bottom: 5rem;
+            left: 27vw;
+        }
+        
+    }
     &:hover{
          color: white;
          background-color: $main-background-color;
@@ -558,12 +712,7 @@
     }
     
     
-    @media (max-width: $screen-3)
-    {
-         
-         border: 3px solid $main-background-color;
-
-    }
+    
    
 
 
@@ -575,11 +724,6 @@
     overflow: hidden;
     z-index: -200;
     &--aboutMe{
-        @media(max-width: $screen-1)
-    {
-        width: auto;
-        
-    }
     @media(max-width: $screen-3)
     {
         width: auto;
@@ -607,6 +751,10 @@
         margin-top: -10rem;
         margin-right: -3vw;
         align-items: flex-start;
+        @media (min-width: $screen-big-3)
+        {
+            margin-top: 10rem;
+        }
         @media (max-width: $screen-2)
         {
             margin-top: 0;
@@ -620,6 +768,17 @@
         {
             
             margin-top: 3vh;
+        }
+    
+    }
+    &--con{
+
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0;
+        @media (max-width: $screen-4)
+        {
+            margin-top: 5vh;
         }
     }
     &__content{
@@ -653,6 +812,10 @@
             {
                 width: 70rem;
             }
+        }
+        &--con{
+            width: 80rem;
+            
         }
         
     }
