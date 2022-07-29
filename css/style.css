@@ -89,7 +89,9 @@ body {
 
 a, a:link, a:visited {
   color: inherit;
-  text-decoration: inherit; }
+  text-decoration: inherit;
+  width: 100%;
+  display: block; }
 
 /* header */
 .bgVideo {
@@ -400,10 +402,10 @@ a, a:link, a:visited {
     width: 47.5rem;
     height: 45.5rem;
     left: -4vw;
-    top: 25vh; }
+    top: 20rem; }
     @media (max-width: 1250px) {
       .mainContent--con {
-        top: 20rem;
+        top: 25rem;
         right: 69vw;
         width: 50rem;
         height: 47rem; } }
@@ -414,7 +416,7 @@ a, a:link, a:visited {
         height: 47rem; } }
     @media (max-width: 850px) {
       .mainContent--con {
-        top: 15vh; } }
+        top: 30rem; } }
     @media (max-width: 750px) {
       .mainContent--con {
         margin-top: 6vh;
@@ -566,8 +568,8 @@ a, a:link, a:visited {
     position: absolute;
     bottom: 20vh;
     left: 30vw;
-    font-size: 4rem;
-    width: 25rem;
+    font-size: 4.5rem;
+    width: 30rem;
     text-align: center;
     color: white;
     background-color: #f53ca5;
@@ -576,8 +578,8 @@ a, a:link, a:visited {
       .button--con1 {
         bottom: 20rem;
         left: 35vw;
-        font-size: 5rem;
-        width: 30rem; } }
+        font-size: 5.5rem;
+        width: 35rem; } }
     @media (max-width: 1000px) {
       .button--con1 {
         font-size: 5rem;
@@ -590,15 +592,17 @@ a, a:link, a:visited {
     @media (max-width: 750px) {
       .button--con1 {
         width: 50rem;
-        font-size: 8rem;
-        bottom: 23rem;
-        left: 27vw; } }
+        font-size: 9rem;
+        bottom: 25rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto; } }
   .button--con2 {
     position: absolute;
     bottom: 7vh;
     left: 30vw;
-    font-size: 4rem;
-    width: 25rem;
+    font-size: 4.5rem;
+    width: 30rem;
     text-align: center;
     color: white;
     background-color: #f53ca5;
@@ -607,8 +611,8 @@ a, a:link, a:visited {
       .button--con2 {
         left: 35vw;
         bottom: 9rem;
-        font-size: 5rem;
-        width: 30rem; } }
+        font-size: 5.5rem;
+        width: 35rem; } }
     @media (max-width: 1000px) {
       .button--con2 {
         font-size: 5rem;
@@ -621,9 +625,11 @@ a, a:link, a:visited {
     @media (max-width: 750px) {
       .button--con2 {
         width: 50rem;
-        font-size: 8rem;
+        font-size: 9rem;
         bottom: 5rem;
-        left: 27vw; } }
+        left: 0;
+        right: 0;
+        margin: 0 auto; } }
   .button:hover {
     color: white;
     background-color: #9A00FF;
@@ -696,7 +702,7 @@ a, a:link, a:visited {
           width: 70rem; } }
       @media (max-width: 850px) {
         .image__content--port {
-          width: 70rem; } }
+          width: 80rem; } }
     .image__content--con {
       width: 80rem; }
 
@@ -705,6 +711,9 @@ a, a:link, a:visited {
   display: flex;
   width: 100vw;
   justify-content: space-around; }
+  @media (max-width: 1250px) {
+    .cardsTechContainer {
+      margin-top: 10vh; } }
   @media (max-width: 850px) {
     .cardsTechContainer {
       margin-top: 5vh; } }
@@ -768,6 +777,20 @@ a, a:link, a:visited {
     background-color: #f53ca5;
     transform: rotateY(180deg); }
 
+.footer {
+  height: 20rem;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #9A00FF; }
+  @media (max-width: 450px) {
+    .footer {
+      font-size: 4rem; } }
+
 .container {
   overflow: hidden; }
 
@@ -826,7 +849,8 @@ a, a:link, a:visited {
 
 .contactSection {
   position: relative;
-  max-height: 100vh; }
+  max-height: 110vh;
+  overflow: hidden; }
   @media (max-width: 750px) {
     .contactSection {
       display: flex;

@@ -418,10 +418,10 @@
         width: 47.5rem;
         height: 45.5rem;
         left: -4vw;
-        top: 25vh;
+        top: 20rem;
         @media(max-width: $screen-1)
         {
-            top: 20rem;
+            top: 25rem;
             right: 69vw;
             width: 50rem;
             height: 47rem;
@@ -434,7 +434,7 @@
         }
         @media (max-width: $screen-3)
         {
-            top: 15vh;
+            top: 30rem;
         }
         @media (max-width: $screen-4)
         {
@@ -635,8 +635,8 @@
         position: absolute;
         bottom: 20vh;
         left: 30vw;
-        font-size: 4rem;
-        width: 25rem;
+        font-size: 4.5rem;
+        width: 30rem;
         text-align: center;
         color: white;
         background-color: $main-font-color;
@@ -645,8 +645,8 @@
         {
             bottom: 20rem;
             left: 35vw;
-            font-size: 5rem;
-            width: 30rem;
+            font-size: 5.5rem;
+            width: 35rem;
         }
         @media (max-width: $screen-2)
         {
@@ -663,17 +663,19 @@
         @media (max-width: $screen-4)
         {
             width: 50rem;
-            font-size: 8rem;
-            bottom: 23rem;
-            left: 27vw;
+            font-size: 9rem;
+            bottom: 25rem;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
         }
     }
     &--con2{
         position: absolute;
         bottom: 7vh;
         left: 30vw;
-        font-size: 4rem;
-        width: 25rem;
+        font-size: 4.5rem;
+        width: 30rem;
         text-align: center;
         color: white;
         background-color: $main-font-color;
@@ -682,8 +684,8 @@
         {
             left: 35vw;
             bottom: 9rem;
-            font-size: 5rem;
-            width: 30rem;
+            font-size: 5.5rem;
+            width: 35rem;
         }
         @media (max-width: $screen-2)
         {
@@ -699,9 +701,11 @@
         @media (max-width: $screen-4)
         {
             width: 50rem;
-            font-size: 8rem;
+            font-size: 9rem;
             bottom: 5rem;
-            left: 27vw;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
         }
         
     }
@@ -810,7 +814,7 @@
             }
             @media (max-width: $screen-3)
             {
-                width: 70rem;
+                width: 80rem;
             }
         }
         &--con{
@@ -829,7 +833,10 @@
     display: flex;
     width: 100vw;
     justify-content: space-around;
-    
+    @media (max-width: $screen-1)
+    {
+        margin-top: 10vh;
+    }
     @media (max-width: $screen-3)
     {
         margin-top: 5vh;
@@ -910,6 +917,22 @@
         backface-visibility: hidden;
         background-color: $main-font-color;
         transform: rotateY(180deg);
+    }
+}
+.footer{
+    
+    height: 20rem;
+    font-size: 3rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    font-weight: bold;
+    color: white;
+    background-color: $main-background-color;
+    @media (max-width: $screen-5)
+    {
+        font-size: 4rem;
     }
 }
 

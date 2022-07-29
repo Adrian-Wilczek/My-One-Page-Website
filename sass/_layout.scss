@@ -70,7 +70,8 @@
 }
 .contactSection{
     position: relative;
-    max-height: 100vh;
+    max-height: 110vh;
+    overflow: hidden;
     @media (max-width: $screen-4)
     {
         display: flex;
@@ -80,4 +81,5 @@
     }
     
 }
+
 
