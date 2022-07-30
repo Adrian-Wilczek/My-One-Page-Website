@@ -25,10 +25,10 @@
         
         <nav>
             <ul class="navigation">
-                <li class="navigation__element"><a href="#AboutMe">O mnie</a></li>
-                <li class="navigation__element"><a href="#technologies">Technologie</a></li>
-                <li class="navigation__element"><a href="#portfolio">Portfolio</a></li>
-                <li class="navigation__element navigation__element--last"><a href="#contact">Kontakt</a></li>
+                <li><a  class="navigation__element" href="#AboutMe">O mnie</a></li>
+                <li><a  class="navigation__element" href="#technologies">Technologie</a></li>
+                <li><a class="navigation__element" href="#portfolio">Portfolio</a></li>
+                <li><a  class="navigation__element navigation__element--last" href="#contact">Kontakt</a></li>
             </ul>
         </nav>
         <h1 class="firstHeader">
@@ -47,10 +47,7 @@
             <p class="mainContent__content mainContent__content--aboutMe">Cześć, mam na imię Adrian. Urodziłem się i mieszkam w Polsce. Zajmuję się projektowaniem i tworzeniem stron www.</p>
             
         </div>
-        <div class="button button--lookMore">
-            <a href="#">Zobacz więcej o mnie </a>
-            
-        </div>
+        <a class="button button--lookMore" href="#popup">Zobacz więcej o mnie </a>
         <div class="image image--aboutMe">
             <img class="image__content" src="images/Developer.png" alt="Developer image">
         </div>
@@ -70,7 +67,9 @@
                     <img class="card__image" src="images/html-5.png" alt="HTML image">
                     <p class="card__paragraph">HTML 5</p>
                 </div>
-                <div class="card__back">back</div>
+                <div class="card__back"><p>HTML pozwala opisać strukturę informacji zawartych wewnątrz strony internetowej, nadając odpowiednie znaczenie semantyczne poszczególnym fragmentom tekstu</p>
+                <img class="image image--card" src="./images/htmlIcon.png" alt="Html icon">
+                </div>
             </div>
             
         </div>
@@ -80,7 +79,10 @@
                     <img class="card__image" src="images/css-3.png" alt="HTML image">
                     <p class="card__paragraph">CSS 3</p>
                 </div>
-                <div class="card__back">back</div>
+                <div class="card__back">
+                    <p>Język służący do opisu formy prezentacji (wyświetlania) stron WWW. Przed pojawieniem się CSS wszystkie informacje zawarte były w znacznikach HTML</p>
+                    <img class="image image--card" src="./images/cssIcon.png" alt="Css icon">
+                </div>
             </div>
             
         </div>
@@ -90,7 +92,10 @@
                     <img class="card__image" src="images/sass.png" alt="HTML image">
                     <p class="card__paragraph">SASS</p>
                 </div>
-                <div class="card__back">back</div>
+                <div class="card__back">
+                    <p>Sass jest językiem skryptowym preprocesora, który jest interpretowany lub kompilowany w kaskadowe arkusze stylów.</p>
+                    <img class="image image--card" src="./images/sassIcon.png" alt="Sass icon">
+                </div>
             </div>
             
         </div>
@@ -108,9 +113,7 @@
         <div class="mainContent mainContent--port">
             <p class="mainContent__content mainContent__content--port">Zapraszam na mojego GitHub’a ;)</p>
         </div>
-        <div class="button button--port">
-            <a href="https://github.com/AdrianWilczekdev">Wejdź na GitHub'a</a>
-        </div>
+            <a class="button button--port" href="https://github.com/AdrianWilczekdev">Wejdź na GitHub'a</a>
         <div class="image image--port">
             <img class="image__content image__content--port" src="images/human.png" alt="Human image">
         </div>
@@ -124,12 +127,8 @@
         <div class="mainContent mainContent--con">
             <p class="mainContent__content mainContent__content--con">Jeśli jesteś chętny\chętna do podjęcia współpracy, zapraszam do kontaktu</p>
         </div>
-        <div class="button button--con1">
-            <a href="https://www.facebook.com/profile.php?id=100076749587901">Facebook</a>
-        </div>
-        <div class="button button--con2">
-            <a href="mailto:adrian.wilczek.official@gmail.com">Mail</a>
-        </div>
+        <a class="button button--con1" href="https://www.facebook.com/profile.php?id=100076749587901">Facebook</a>
+        <a class="button button--con2" href="mailto:adrian.wilczek.official@gmail.com">Mail</a>
         <div class="image image--con">
             <img class="image__content image__content--con" src="images/human-and-dog.png" alt="Human image">
         </div>
@@ -137,6 +136,16 @@
     </section>
     </main>
     <footer class="footer"><p>&copy Adrian Wilczek 2022. Wszelkie prawa zastrzeżone.</p></footer>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <p class="popup__text">Cześć nazywam się Adrian. Uwielbiam tworzyć strony www (uczę się już dłuższy czas). Moja przygoda zaczęła się wiele lat temu z językiem Python i grą Minecraft (wtedy to była bardziej zabawa). Po kilku latach wróciłem do tego ucząc się front-end'u i robię to aż do teraz. Oprócz tego uczę się języka C++. Jeśli jesteś zainteresowana/y współpracą lub chcesz się czegoś więcej dowiedzieć o tym co robię zapraszam do kontaktu. </p>
+            <a class="button button--popup" href="#">Wyjdź</a>
+            
+
+        </div>
+        
+        
     </div>
   
 </body>

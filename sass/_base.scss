@@ -124,8 +124,8 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 a, a:link, a:visited{
-    color: inherit;
-    text-decoration: inherit;
-    width: 100%;
-    display: block;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
 }
