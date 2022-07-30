@@ -33,55 +33,43 @@ html, body {
   scroll-behavior: smooth; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 10px; }
   @media (min-width: 1500px) {
     html {
-      font-size: 81.25%;
-      /* 14px */ } }
+      font-size: 14px; } }
   @media (min-width: 2000px) {
     html {
-      font-size: 93.75%;
-      /* 15px */ } }
+      font-size: 15px; } }
   @media (min-width: 3000px) {
     html {
-      font-size: 125%;
-      /* 18px */ } }
+      font-size: 18px; } }
   @media (max-width: 1250px) {
     html {
-      font-size: 50%;
-      /* 9px */ } }
+      font-size: 9px; } }
   @media (max-width: 1000px) {
     html {
-      font-size: 43.75%;
-      /* 7px */ } }
+      font-size: 7px; } }
   @media (max-width: 850px) {
     html {
-      font-size: 37.5%;
-      /* 6px */ } }
+      font-size: 6px; } }
   @media (max-width: 750px) {
     html {
-      font-size: 31.25%;
-      /* 5px */ } }
+      font-size: 5px; } }
   @media (max-width: 450px) {
     html {
-      font-size: 25%;
-      /* 4px */ } }
+      font-size: 4px; } }
   @media (max-width: 350px) {
     html {
-      font-size: 18.75%;
-      /* 3px */ } }
+      font-size: 3px; } }
   @media (max-height: 450px) {
     html {
-      font-size: 31.25%;
-      /* 5px */ } }
+      font-size: 5px; } }
   @media (max-height: 400px) {
     html {
-      font-size: 25%;
-      /* 4px */ } }
+      font-size: 4px; } }
   @media (max-height: 350px) {
     html {
-      font-size: 18.75%;
-      /* 3px */ } }
+      font-size: 3px; } }
 
 body {
   font-weight: 400;
