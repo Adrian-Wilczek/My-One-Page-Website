@@ -15,6 +15,12 @@
     {
         height: 160vh;
     }
+    @media (max-width: $screen-4)
+    {
+        background-image: url(../images/macimage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .aboutMeSection{
