@@ -2,29 +2,19 @@
 $main-font-color: #f53ca5;
 $main-background-color: #9A00FF;
 /*screen sizes (width) */
-$screen-1: 1250px;
-$screen-2: 1000px;
-$screen-3: 850px;
-$screen-4: 750px;
-$screen-4b: 650px;
-$screen-4c: 550px;
-$screen-5: 450px;
-$screen-6: 350px;
+$screen-1: 1250px; //laptops
+$screen-2: 1000px; //big tablets
+$screen-3: 850px; //medium tablets
+$screen-4: 750px; //small tablets
+$screen-5: 450px; //big phones
+$screen-6: 350px; //small phones
 
 /*big screen sizes (width) */
 $screen-big-1: 1500px;
 $screen-big-2: 1900px;
 $screen-big-3: 3000px;
 
-/*screen sizes (height) */
 
-$screen-1h: 700px;
-$screen-2h: 450px;
-$screen-3h: 400px;
-$screen-4h: 350px;
-
-/*big screen sizes (height)*/
-$screen-big-1h: 1000px;
 
 @keyframes navbar-start-animation {
     0%{
@@ -103,20 +93,6 @@ html{
     {
         font-size: 3px;
     }
-
-    @media (max-height: $screen-2h)
-    {
-        font-size: 5px;
-    }
-    @media (max-height: $screen-3h)
-    {
-        font-size: 4px;
-    }
-    @media (max-height: $screen-4h)
-    {
-        font-size: 3px;
-    }
-
    
 }
 body{
