@@ -22,10 +22,7 @@
     height: auto;
     position: relative;
     border-bottom: 1.25rem solid $main-background-color;
-    @media (max-width: $screen-3)
-    {
-        min-height: 55vh;
-    }
+    
     @media (max-width: $screen-4)
     {
         

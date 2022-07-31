@@ -389,7 +389,7 @@
         }
         @media (max-width: $screen-2)
         {
-           top: 25vh;
+           top: 15vh;
         }
         @media (max-width: $screen-3)
         {
@@ -577,9 +577,13 @@
      
       @media (max-width: $screen-1)
       {
-        top: 77rem;
+        top: 80rem;
         right: 6vw;
         font-size: 4rem;
+      }
+      @media (max-width: $screen-2)
+      {
+        top: 85rem;
       }
       @media(max-width: $screen-3)
         {   
@@ -738,10 +742,11 @@
     overflow: hidden;
     z-index: -1;
     &--aboutMe{
+    
     @media(max-width: $screen-3)
     {
+        
         width: auto;
-        margin-bottom: -10vh;
     }
     }
     &--tech{

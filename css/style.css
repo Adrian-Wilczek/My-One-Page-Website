@@ -363,7 +363,7 @@ li {
         height: 43rem; } }
     @media (max-width: 1000px) {
       .mainContent--port {
-        top: 25vh; } }
+        top: 15vh; } }
     @media (max-width: 850px) {
       .mainContent--port {
         top: 23vh;
@@ -506,9 +506,12 @@ li {
     right: 15vw; }
     @media (max-width: 1250px) {
       .button--lookMore {
-        top: 77rem;
+        top: 80rem;
         right: 6vw;
         font-size: 4rem; } }
+    @media (max-width: 1000px) {
+      .button--lookMore {
+        top: 85rem; } }
     @media (max-width: 850px) {
       .button--lookMore {
         top: 80rem;
@@ -632,8 +635,7 @@ li {
   z-index: -1; }
   @media (max-width: 850px) {
     .image--aboutMe {
-      width: auto;
-      margin-bottom: -10vh; } }
+      width: auto; } }
   .image--tech {
     position: absolute;
     right: 10vw;
@@ -844,9 +846,6 @@ li {
   height: auto;
   position: relative;
   border-bottom: 1.25rem solid #9A00FF; }
-  @media (max-width: 850px) {
-    .aboutMeSection {
-      min-height: 55vh; } }
   @media (max-width: 750px) {
     .aboutMeSection {
       display: flex;
